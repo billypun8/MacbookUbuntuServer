@@ -3,7 +3,7 @@ services:
     image: haproxy:latest
     container_name: haproxy
     network_mode: host
-    sysctls:
-      - net.ipv4.ip_unprivileged_port_start=0
+    # sysctls:
+    #   - net.ipv4.ip_unprivileged_port_start=0
     volumes:
       - ./config:/usr/local/etc/haproxy
